@@ -1,0 +1,447 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    border: 0;
+}
+
+h1,h2,p{
+    text-align: center;
+}
+
+img{
+    display: block;
+}
+
+/* vista 1 */
+
+@media (max-width:780px ) {
+   /* seccion 0 */
+    .principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+   .section_principal .imagen_principal{
+    display: none;
+   }
+   /* seccion 2 */
+   .estadisticas_peru{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .estadisticas_peru div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .estadisticas_peru .graficas_menores{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   }
+
+   .graficas_menores  div{
+    display: flex;
+    padding: 20px;
+   }
+
+   .graficas_menores img{
+    width: 50%;
+   }
+
+   .estadisticas_peru img{
+    width: 50%;
+   }
+}
+
+
+/* vista 2 */
+@media (min-width: 780px) and (max-width:1219px){
+    
+    /* seccion 0 */
+    .section_principal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     .imagen_principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .section_principal .imagen_principal img{
+        max-width: 50%;
+        padding: 30px 0 0 0;
+    }
+
+    /* seccion 1 */
+    .section_pregunta{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+    }
+    /* seccion2 */
+    .estadisticas_peru{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estadisticas_peru .graficas_menores{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estadisticas_peru div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .estadisticas_peru img{
+        width: 50%;
+    }
+
+
+    .graficas_menores img{
+        width: 70%;
+        padding: 20px;
+    }
+}
+
+/* vista 3 */
+/* seccion 0 */
+@media (min-width:1220px){
+     body{
+    padding: 40px 200px;
+    }
+
+    img{
+        display: block;
+    }
+
+    .section_principal{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .section_principal .principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .section_principal .imagen_principal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    } 
+
+    .section_principal .imagen_principal img{
+        width: 80%;
+    }
+    /* seccion 2 */
+    .estadisticas_peru{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estadisticas_peru .graficas_menores{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .estadisticas_peru div{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .estadisticas_peru img{
+        width: 50%;
+    }
+
+
+    .graficas_menores img{
+        width: 80%;
+        padding: 20px;
+    }
+}
+
+    /* PARTE 2 DE LA SECCION 3 A LA 5 */
+@media (min-width: 1220px) {
+    body{
+        padding:50px 200px;
+    }
+
+    section{
+        padding: 20px 0px;
+    }
+
+    h2{
+        
+        text-align: center;
+    }
+
+    img{
+        display: block;
+        width: 100%;
+    }
+
+    p{
+        padding: 10px 0;
+    }
+
+    /* seccion 3 */
+    .estadisticas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .estadisticas div{
+        max-width: 50%;
+    }
+
+    .estadisticas .img_estadistica img{
+        padding: 0 60px;
+    }
+
+
+
+
+    .estadisticas p{
+        padding: 20px;
+    }
+
+
+    /* seccion 4 */
+    .section_modalidad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_modalidad .modalidad{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .section_modalidad .normal{
+        flex-direction: row;
+    }
+
+    .section_modalidad .reverse{
+        flex-direction: row-reverse;
+    }
+
+    .section_modalidad .modalidad img{
+        padding: 30px 60px;
+    }
+
+    .section_modalidad .modalidad .texto{
+    padding: 20px;
+    }
+
+    /* seccion 5 */
+    .section_publicaciones{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .section_publicaciones .div_img{
+        display: flex;
+        flex-direction:row ;
+    }
+
+    .section_publicaciones .tiktok{
+        padding: 20px;
+    }
+
+    .section_publicaciones .tiktok img{
+        border-radius: 15px;
+    }
+}
+
+
+@media (max-width: 780px) {
+    .estadisticas p,
+    .section_modalidad .texto p {
+        display: none; 
+    }
+
+
+    .estadisticas h2,
+    .section_modalidad h2,
+    .section_publicaciones h2 {
+        font-size: 24px; 
+        text-align: center; 
+        margin-bottom: 10px; 
+    }
+
+    
+    .estadisticas .img_estadistica img,
+    .section_modalidad .modalidad img,
+    .section_publicaciones .tiktok img {
+        width: 280px;    
+        height: 211px;   
+    }
+
+    .img_estadistica,
+    .modalidad,
+    .tiktok {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+    }
+
+    
+    .section_publicaciones .tiktok img {
+        width: 280px;    
+        height: 211px;   
+        margin-bottom: 20px; 
+    }
+
+    .section_publicaciones .div_img .tiktok:not(:last-child) {
+        margin-bottom: 20px; 
+    }
+}
+
+
+@media (min-width: 780px) and (max-width: 1219px) {
+    body {
+        padding: 50px 200px; 
+    }
+
+    /* sección 3 */
+    .estadisticas {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .estadisticas div {
+        flex-direction: column; 
+        max-width: 50%; 
+    }
+
+    .estadisticas .img_estadistica img {
+        width: 280px;   
+        height: 211px;  
+        padding: 20px 0; 
+    }
+
+    /* sección 4 */
+    .section_modalidad .modalidad {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_modalidad .modalidad img {
+        width: 280px;   
+        height: 211px;  
+        padding: 20px 0; 
+    }
+
+    /* sección 5 */
+    .section_publicaciones .div_img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_publicaciones .tiktok {
+        padding: 20px;
+    }
+
+    .section_publicaciones .tiktok img {
+        width: 280px;   
+        height: 211px;  
+        padding: 20px 0; 
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* body{
+    padding: 40px 200px;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+.section_principal{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.section_principal .principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section_principal .imagen_principal{
+    padding: 20px;
+    max-width: 50%;
+} */
